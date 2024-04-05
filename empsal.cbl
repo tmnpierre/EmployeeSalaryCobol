@@ -19,11 +19,14 @@
       *    Identifiant de l'employé (uniquement des chiffres).
            05 EMP-ID PIC 9(8) VALUE "38042524".
 
-      *    Prénom de l'employé.
-           05 EMP-FIRST-NAME PIC X(16) VALUE "John".
+      *    Nom complet de l'employé, composé du prénom et du nom.
+           05 EMP-FULL-NAME.
 
-      *    Nom de famille de l'employé.
-           05 EMP-LAST-NAME PIC X(16) VALUE "Doe".
+      *        Prénom de l'employé.
+               10 EMP-FIRST-NAME PIC X(16) VALUE "John".
+               
+      *        Nom de famille de l'employé.
+               10 EMP-LAST-NAME  PIC X(16) VALUE "Doe".
 
       *    Intitulé du poste de l'employé.
            05 JOB-TITLE PIC X(24) VALUE "Coboliste".
